@@ -1,0 +1,82 @@
+// ========================================================
+// @cads-support: border-colors
+// ========================================================
+//
+/*
+BORDER COLORS
+Border colors can be used to extend the base
+border classes ba,bt,bb,br,bl found in the _borders.css file.
+The base border class by default will set the color of the border
+to that of the current text color. These classes are for the cases
+where you desire for the text and border colors to be different.
+Base:
+  b = border
+
+modifiers: --color-name = each color variable name is also a border color name
+  */
+.b--heritage-blue {
+  border-color: $heritage-blue;
+}
+.b--heritage-yellow {
+  border-color: $heritage-yellow;
+}
+.b--heritage-blue-40 {
+  border-color: $heritage-blue-40;
+}
+.b--heritage-yellow-40 {
+  border-color: $heritage-yellow-40;
+}
+.b--blue-dark {
+  border-color: $blue-dark;
+}
+.b--blue-primary {
+  border-color: $blue-primary;
+}
+.b--blue-mid {
+  border-color: $blue-mid;
+}
+.b--blue-light {
+  border-color: $blue-light;
+}
+.b--turquoise-dark {
+  border-color: $turquoise-dark;
+}
+.b--turqouise-primary {
+  border-color: $turqouise-primary;
+}
+.b--turqouise-mid {
+  border-color: $turqouise-mid;
+}
+.b--turqouise-light {
+  border-color: $turqouise-light;
+}
+.b--red-primary {
+  border-color: $red-primary;
+}
+.b--red-light {
+  border-color: $red-light;
+}
+.b--black {
+  border-color: $black;
+}
+.b--dark-grey {
+  border-color: $dark-grey;
+}
+.b--mid-grey {
+  border-color: $mid-grey;
+}
+.b--grey {
+  border-color: $grey;
+}
+.b--light-grey {
+  border-color: $light-grey;
+}
+.b--pale-grey {
+  border-color: $pale-grey;
+}
+.b--white {
+  border-color: $white;
+}
+.b--inherit {
+  border-color: inherit;
+}

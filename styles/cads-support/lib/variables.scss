@@ -1,0 +1,87 @@
+// ========================================================
+// @cads-support: variables
+// ========================================================
+//
+
+// border radius - MAY NEED TO BE LOOKED AT
+$border-radius-none: 0 !default;
+$border-radius-1: 0.125rem !default; // 2px
+$border-radius-2: 0.25rem !default; // 4px
+$border-radius-3: 0.5rem !default; // 8px
+$border-radius-4: 1rem !default; // 16px
+$border-radius-circle: 100% !default;
+$border-radius-pill: 9999px !default;
+
+// border widths
+$border-width-none: 0 !default;
+$border-width-1: 0.125rem !default; // 2px
+$border-width-3: 0.5rem !default; // 4px
+$border-width-2: 0.25rem !default; // 8px
+$border-width-4: 1rem !default; // 16px
+$border-width-5: 2rem !default; // 32px
+
+// box shadow
+$box-shadow-1: 0px 0px 4px 2px rgba(0, 0, 0, 0.2) !default;
+$box-shadow-2: 0px 0px 8px 2px rgba(0, 0, 0, 0.2) !default;
+$box-shadow-3: 2px 2px 4px 2px rgba(0, 0, 0, 0.2) !default;
+$box-shadow-4: 2px 2px 8px 0px rgba(0, 0, 0, 0.2) !default;
+$box-shadow-5: 4px 4px 8px 0px rgba(0, 0, 0, 0.2) !default;
+
+// breakpoints
+$breakpoint-not-small: "screen and (min-width: 48em)" !default;
+$breakpoint-medium: "screen and (min-width: 48em) and (max-width: 64em)" !default;
+$breakpoint-large: "screen and (min-width: 64em)" !default;
+
+// colours
+$heritage-blue: #004b88;
+$heritage-yellow: #fcbb69;
+$heritage-blue-40: #97a8cc;
+$heritage-yellow-40: #fde5c4;
+$blue-dark: #229cff;
+$blue-primary: #8ac4ff;
+$blue-mid: #caeaff;
+$blue-light: #f2f8ff;
+$turquoise-dark: #5cc0b5;
+$turqouise-primary: #81cec6;
+$turqouise-mid: #b8e3df;
+$turqouise-light: #eaf9f7;
+$red-primary: #df3034;
+$red-light: #fae1e1;
+$black: #000000;
+$dark-grey: #333333;
+$mid-grey: #606060;
+$grey: #9f9f9f;
+$light-grey: #dfdfdf;
+$pale-grey: #f2f2f2;
+$white: #ffffff;
+
+// font family
+$sans-serif: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica,
+  "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif !default;
+$serif: georgia, serif !default;
+
+// height - MAY NEED TO BE LOOKED AT
+$height-1: 1rem !default;
+$height-2: 2rem !default;
+$height-3: 4rem !default;
+$height-4: 8rem !default;
+$height-5: 16rem !default;
+
+// line height
+$line-height-solid: 1 !default;
+$line-height-title: 1.25 !default;
+$line-height-copy: 1.5 !default;
+
+// letter spacing
+$letter-spacing-tight: -0.05em !default;
+$letter-spacing-1: 0.1em !default;
+$letter-spacing-2: 0.25em !default;
+
+// spacing
+$spacing-none: 0 !default;
+$spacing-xs: 0.5rem !default; // 8px
+$spacing-sm: 0.75rem !default; // 12px
+$spacing-md: 1rem !default; // 16px
+$spacing-lg: 1.5rem !default; // 24px
+$spacing-xl: 2rem !default; // 32px
+$spacing-2xl: 2.5rem !default; // 40px
