@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:css": "node-sass --output-style expanded --source-map ./styles/main.scss ./component-testing/output.css",
+    "watch:css": "nodemon --watch ./styles --ext scss --exec \"npm run compile:css\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.26.3",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9"
   }
 }

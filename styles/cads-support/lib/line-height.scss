@@ -4,8 +4,7 @@
 //
 
 /*
-   LINE HEIGHT / LEADING
-   Docs: http://tachyons.io/docs/typography/line-height
+
    Media Query Extensions:
      -ns = not-small
      -m  = medium
@@ -15,9 +14,11 @@
 .lh-solid {
   line-height: $line-height-solid;
 }
+
 .lh-title {
   line-height: $line-height-title;
 }
+
 .lh-copy {
   line-height: $line-height-copy;
 }
@@ -26,9 +27,11 @@
   .lh-solid-ns {
     line-height: $line-height-solid;
   }
+
   .lh-title-ns {
     line-height: $line-height-title;
   }
+
   .lh-copy-ns {
     line-height: $line-height-copy;
   }
@@ -38,9 +41,11 @@
   .lh-solid-m {
     line-height: $line-height-solid;
   }
+
   .lh-title-m {
     line-height: $line-height-title;
   }
+
   .lh-copy-m {
     line-height: $line-height-copy;
   }
@@ -50,9 +55,11 @@
   .lh-solid-l {
     line-height: $line-height-solid;
   }
+
   .lh-title-l {
     line-height: $line-height-title;
   }
+
   .lh-copy-l {
     line-height: $line-height-copy;
   }

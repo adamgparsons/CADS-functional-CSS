@@ -41,6 +41,11 @@ input[type="password"],
 input[type="tel"],
 input[type="text"],
 input[type="url"],
+button,
 .border-box {
   box-sizing: border-box;
+}
+
+.content-box {
+  box-sizing: content-box;
 }

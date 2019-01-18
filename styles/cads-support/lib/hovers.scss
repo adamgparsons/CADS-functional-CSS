@@ -1,57 +1,355 @@
 // ========================================================
-// @cads-support: letter-spacing
+// @cads-support: hover
 // ========================================================
 //
 
-/*
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
+// focus and hover need to be seperated into different 
+//classes with focus later in the cascade
 
-.tracked {
-  letter-spacing: $letter-spacing-1;
-}
-.tracked-tight {
-  letter-spacing: $letter-spacing-tight;
-}
-.tracked-mega {
-  letter-spacing: $letter-spacing-2;
+.hover-heritage-blue:focus {
+  color: #004b88;
 }
 
-@media #{$breakpoint-not-small} {
-  .tracked-ns {
-    letter-spacing: $letter-spacing-1;
-  }
-  .tracked-tight-ns {
-    letter-spacing: $letter-spacing-tight;
-  }
-  .tracked-mega-ns {
-    letter-spacing: $letter-spacing-2;
-  }
+.hover-heritage-blue:hover {
+  color: #004b88;
 }
 
-@media #{$breakpoint-medium} {
-  .tracked-m {
-    letter-spacing: $letter-spacing-1;
-  }
-  .tracked-tight-m {
-    letter-spacing: $letter-spacing-tight;
-  }
-  .tracked-mega-m {
-    letter-spacing: $letter-spacing-2;
-  }
+.hover-bg-heritage-blue:focus {
+  background-color: #004b88;
 }
 
-@media #{$breakpoint-large} {
-  .tracked-l {
-    letter-spacing: $letter-spacing-1;
-  }
-  .tracked-tight-l {
-    letter-spacing: $letter-spacing-tight;
-  }
-  .tracked-mega-l {
-    letter-spacing: $letter-spacing-2;
-  }
+.hover-bg-heritage-blue:hover {
+  background-color: #004b88;
+}
+
+.hover-heritage-yellow:focus {
+  color: #fcbb69;
+}
+
+.hover-heritage-yellow:hover {
+  color: #fcbb69;
+}
+
+
+
+.hover-bg-heritage-yellow:focus {
+  background-color: #fcbb69;
+}
+
+.hover-bg-heritage-yellow:hover {
+  background-color: #fcbb69;
+}
+
+.hover-heritage-blue-40:focus {
+  color: #97a8cc;
+}
+
+.hover-heritage-blue-40:hover {
+  color: #97a8cc;
+}
+
+.hover-bg-heritage-blue-40:focus {
+  background-color: #97a8cc;
+}
+
+.hover-bg-heritage-blue-40:hover {
+  background-color: #97a8cc;
+}
+
+.hover-heritage-yellow-40:focus {
+  color: #fde5c4;
+}
+
+.hover-heritage-yellow-40:hover {
+  color: #fde5c4;
+}
+
+.hover-bg-heritage-yellow-40:focus {
+  background-color: #fde5c4;
+}
+
+.hover-bg-heritage-yellow-40:hover {
+  background-color: #fde5c4;
+}
+
+.hover-blue-dark:focus {
+  color: #229cff;
+}
+
+.hover-blue-dark:hover {
+  color: #229cff;
+}
+
+.hover-bg-blue-dark:focus {
+  background-color: #229cff;
+}
+
+.hover-bg-blue-dark:hover {
+  background-color: #229cff;
+}
+
+.hover-blue-primary:focus {
+  color: #8ac4ff;
+}
+
+.hover-blue-primary:hover {
+  color: #8ac4ff;
+}
+
+.hover-bg-blue-primary:focus {
+  background-color: #8ac4ff;
+}
+
+.hover-bg-blue-primary:hover {
+  background-color: #8ac4ff;
+}
+
+.hover-blue-mid:focus {
+  color: #caeaff;
+}
+
+.hover-blue-mid:hover {
+  color: #caeaff;
+}
+
+.hover-bg-blue-mid:focus {
+  background-color: #caeaff;
+}
+
+.hover-bg-blue-mid:hover {
+  background-color: #caeaff;
+}
+
+.hover-blue-light:focus {
+  color: #f2f8ff;
+}
+
+.hover-blue-light:hover {
+  color: #f2f8ff;
+}
+
+.hover-bg-blue-light:focus {
+  background-color: #f2f8ff;
+}
+
+.hover-bg-blue-light:hover {
+  background-color: #f2f8ff;
+}
+
+// .focus-turquoise-dark:focus {
+//   color: #5cc0b5;
+// }
+
+.hover-turquoise-dark:hover {
+  color: #5cc0b5;
+}
+
+.focus-bg-turquoise-dark:focus {
+  background-color: #5cc0b5;
+}
+
+.hover-bg-turquoise-dark:hover {
+  background-color: #5cc0b5;
+}
+
+
+
+.hover-b-turquoise-dark:hover {
+  border-color: #5cc0b5;
+}
+
+.hover-turqouise-primary:focus {
+  color: #81cec6;
+}
+
+.hover-turqouise-primary:hover {
+  color: #81cec6;
+}
+
+.hover-bg-turqouise-primary:focus {
+  background-color: #81cec6;
+}
+
+.hover-bg-turqouise-primary:hover {
+  background-color: #81cec6;
+}
+
+.hover-turqouise-mid:focus {
+  color: #b8e3df;
+}
+
+.hover-turqouise-mid:hover {
+  color: #b8e3df;
+}
+
+.hover-bg-turqouise-mid:focus {
+  background-color: #b8e3df;
+}
+
+.hover-bg-turqouise-mid:hover {
+  background-color: #b8e3df;
+}
+
+.hover-turqouise-light:focus {
+  color: #eaf9f7;
+}
+
+.hover-turqouise-light:hover {
+  color: #eaf9f7;
+}
+
+.hover-bg-turqouise-light:focus {
+  background-color: #eaf9f7;
+}
+
+.hover-bg-turqouise-light:hover {
+  background-color: #eaf9f7;
+}
+
+.hover-red-primary:focus {
+  color: #df3034;
+}
+
+.hover-red-primary:hover {
+  color: #df3034;
+}
+
+.hover-bg-red-primary:focus {
+  background-color: #df3034;
+}
+
+.hover-bg-red-primary:hover {
+  background-color: #df3034;
+}
+
+.hover-red-light:focus {
+  color: #fae1e1;
+}
+
+.hover-red-light:hover {
+  color: #fae1e1;
+}
+
+.hover-bg-red-light:focus {
+  background-color: #fae1e1;
+}
+
+.hover-bg-red-light:hover {
+  background-color: #fae1e1;
+}
+
+.hover-black:focus {
+  color: #000;
+}
+
+.hover-black:hover {
+  color: #000;
+}
+
+.hover-bg-black:focus {
+  background-color: #000;
+}
+
+.hover-bg-black:hover {
+  background-color: #000;
+}
+
+.hover-dark-grey:focus {
+  color: #333;
+}
+
+.hover-dark-grey:hover {
+  color: #333;
+}
+
+.hover-bg-dark-grey:focus {
+  background-color: #333;
+}
+
+.hover-bg-dark-grey:hover {
+  background-color: #333;
+}
+
+.hover-mid-grey:focus {
+  color: #606060;
+}
+
+.hover-mid-grey:hover {
+  color: #606060;
+}
+
+.hover-bg-mid-grey:focus {
+  background-color: #606060;
+}
+
+.hover-bg-mid-grey:hover {
+  background-color: #606060;
+}
+
+.hover-grey:focus {
+  color: #9f9f9f;
+}
+
+.hover-grey:hover {
+  color: #9f9f9f;
+}
+
+.hover-bg-grey:focus {
+  background-color: #9f9f9f;
+}
+
+.hover-bg-grey:hover {
+  background-color: #9f9f9f;
+}
+
+.hover-light-grey:focus {
+  color: #dfdfdf;
+}
+
+.hover-light-grey:hover {
+  color: #dfdfdf;
+}
+
+.hover-bg-light-grey:focus {
+  background-color: #dfdfdf;
+}
+
+.hover-bg-light-grey:hover {
+  background-color: #dfdfdf;
+}
+
+.hover-pale-grey:focus {
+  color: #f2f2f2;
+}
+
+.hover-pale-grey:hover {
+  color: #f2f2f2;
+}
+
+.hover-bg-pale-grey:focus {
+  background-color: #f2f2f2;
+}
+
+.hover-bg-pale-grey:hover {
+  background-color: #f2f2f2;
+}
+
+.hover-white:focus {
+  color: #fff;
+}
+
+.hover-white:hover {
+  color: #fff;
+}
+
+.hover-bg-white:focus {
+  background-color: #fff;
+}
+
+.hover-bg-white:hover {
+  background-color: #fff;
+}
+
+.focus-b-heritage-yellow:focus {
+  border-color: $heritage-yellow
 }
