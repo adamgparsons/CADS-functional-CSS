@@ -56,16 +56,27 @@ $pale-grey: #f2f2f2;
 $white: #ffffff;
 
 // font family
-$sans-serif: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica,
-  "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif !default;
-$serif: georgia, serif !default;
+$sans-serif: -apple-system,
+BlinkMacSystemFont,
+"avenir next",
+avenir,
+helvetica,
+"helvetica neue",
+ubuntu,
+roboto,
+noto,
+"segoe ui",
+arial,
+sans-serif !default;
+$serif: georgia,
+serif !default;
 
 // height - MAY NEED TO BE LOOKED AT
-$height-1: 1rem !default;
-$height-2: 2rem !default;
-$height-3: 4rem !default;
-$height-4: 8rem !default;
-$height-5: 16rem !default;
+$height-1: 1rem !default; //16px
+$height-2: 2rem !default; // 32px
+$height-3: 4rem !default; // 64px
+$height-4: 8rem !default; // 128px
+$height-5: 16rem !default; // 256px
 
 // line height
 $line-height-solid: 1 !default;
@@ -79,9 +90,22 @@ $letter-spacing-2: 0.25em !default;
 
 // spacing
 $spacing-none: 0 !default;
+$spacing-2xs: 0.25rem !default; // 4px
 $spacing-xs: 0.5rem !default; // 8px
 $spacing-sm: 0.75rem !default; // 12px
 $spacing-md: 1rem !default; // 16px
 $spacing-lg: 1.5rem !default; // 24px
 $spacing-xl: 2rem !default; // 32px
 $spacing-2xl: 2.5rem !default; // 40px
+
+.before-border:before {
+  border-color: #004b88
+}
+
+h1 {}
+
+input[type="radio"]:before,
+input[type="checkbox"]:before {
+  @extend .bw1;
+  @extend .
+}
