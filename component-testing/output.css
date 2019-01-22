@@ -390,6 +390,9 @@ template {
 [hidden] {
   display: none; }
 
+.before-border:before {
+  border-color: #004b88; }
+
 .bg-heritage-blue {
   background-color: #004b88; }
 
@@ -408,7 +411,7 @@ template {
 .bg-blue-primary {
   background-color: #8ac4ff; }
 
-.bg-blue-mid {
+.bg-blue-mid, .radio input[type="radio"]:checked::before {
   background-color: #caeaff; }
 
 .bg-blue-light {
@@ -589,6 +592,116 @@ template {
 
   .contain-l {
     background-size: contain !important; } }
+/* Base:
+      b = border
+    Modifiers:
+      a = all
+      t = top
+      r = right
+      b = bottom
+      l = left
+      n = none
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+.ba, .radio input[type="radio"]::before {
+  border-style: solid;
+  border-width: 1px; }
+
+.bt {
+  border-top-style: solid;
+  border-top-width: 1px; }
+
+.br {
+  border-right-style: solid;
+  border-right-width: 1px; }
+
+.bb {
+  border-bottom-style: solid;
+  border-bottom-width: 1px; }
+
+.bl {
+  border-left-style: solid;
+  border-left-width: 1px; }
+
+.bn {
+  border-style: none;
+  border-width: 0; }
+
+@media screen and (min-width: 48em) {
+  .ba-ns {
+    border-style: solid;
+    border-width: 1px; }
+
+  .bt-ns {
+    border-top-style: solid;
+    border-top-width: 1px; }
+
+  .br-ns {
+    border-right-style: solid;
+    border-right-width: 1px; }
+
+  .bb-ns {
+    border-bottom-style: solid;
+    border-bottom-width: 1px; }
+
+  .bl-ns {
+    border-left-style: solid;
+    border-left-width: 1px; }
+
+  .bn-ns {
+    border-style: none;
+    border-width: 0; } }
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  .ba-m {
+    border-style: solid;
+    border-width: 1px; }
+
+  .bt-m {
+    border-top-style: solid;
+    border-top-width: 1px; }
+
+  .br-m {
+    border-right-style: solid;
+    border-right-width: 1px; }
+
+  .bb-m {
+    border-bottom-style: solid;
+    border-bottom-width: 1px; }
+
+  .bl-m {
+    border-left-style: solid;
+    border-left-width: 1px; }
+
+  .bn-m {
+    border-style: none;
+    border-width: 0; } }
+@media screen and (min-width: 64em) {
+  .ba-l {
+    border-style: solid;
+    border-width: 1px; }
+
+  .bt-l {
+    border-top-style: solid;
+    border-top-width: 1px; }
+
+  .br-l {
+    border-right-style: solid;
+    border-right-width: 1px; }
+
+  .bb-l {
+    border-bottom-style: solid;
+    border-bottom-width: 1px; }
+
+  .bl-l {
+    border-left-style: solid;
+    border-left-width: 1px; }
+
+  .bn-l {
+    border-style: none;
+    border-width: 0; } }
 /*
 BORDER COLORS
 Border colors can be used to extend the base
@@ -601,71 +714,74 @@ Base:
 
 modifiers: --color-name = each color variable name is also a border color name
   */
-.b--heritage-blue {
-  border-color: #004b88; }
-
-.b--heritage-yellow {
-  border-color: #fcbb69; }
-
-.b--heritage-blue-40 {
-  border-color: #97a8cc; }
-
-.b--heritage-yellow-40 {
-  border-color: #fde5c4; }
-
-.b--blue-dark {
-  border-color: #229cff; }
-
-.b--blue-primary {
-  border-color: #8ac4ff; }
-
-.b--blue-mid {
-  border-color: #caeaff; }
-
-.b--blue-light {
-  border-color: #f2f8ff; }
-
-.b--turquoise-dark {
-  border-color: #5cc0b5; }
-
-.b--turqouise-primary {
-  border-color: #81cec6; }
-
-.b--turqouise-mid {
-  border-color: #b8e3df; }
-
-.b--turqouise-light {
-  border-color: #eaf9f7; }
-
-.b--red-primary {
-  border-color: #df3034; }
-
-.b--red-light {
-  border-color: #fae1e1; }
-
 .b--black {
-  border-color: #000000; }
+  border-color: #000000 !important; }
 
 .b--dark-grey {
-  border-color: #333333; }
+  border-color: #333333 !important; }
 
 .b--mid-grey {
-  border-color: #606060; }
+  border-color: #606060 !important; }
 
-.b--grey {
-  border-color: #9f9f9f; }
+.b--grey, .radio input[type="radio"]:hover::before {
+  border-color: #9f9f9f !important; }
 
-.b--light-grey {
-  border-color: #dfdfdf; }
+.b--light-grey, .radio input[type="radio"]::before {
+  border-color: #dfdfdf !important; }
 
 .b--pale-grey {
-  border-color: #f2f2f2; }
+  border-color: #f2f2f2 !important; }
+
+.b--heritage-blue {
+  border-color: #004b88 !important; }
+
+.b--heritage-blue-40 {
+  border-color: #97a8cc !important; }
+
+.b--blue-dark {
+  border-color: #229cff !important; }
+
+.b--blue-primary, .radio input[type="radio"]:checked::before {
+  border-color: #8ac4ff !important; }
+
+.b--blue-mid {
+  border-color: #caeaff !important; }
+
+.b--blue-light {
+  border-color: #f2f8ff !important; }
+
+.b--heritage-yellow, .radio input[type="radio"]:focus::before {
+  border-color: #fcbb69 !important; }
+
+.b--heritage-yellow-40 {
+  border-color: #fde5c4 !important; }
+
+.b--red-primary {
+  border-color: #df3034 !important; }
+
+.b--red-light {
+  border-color: #fae1e1 !important; }
+
+.b--turquoise-dark {
+  border-color: #5cc0b5 !important; }
+
+.b--turqouise-primary {
+  border-color: #81cec6 !important; }
+
+.b--turqouise-mid {
+  border-color: #b8e3df !important; }
+
+.b--turqouise-light {
+  border-color: #eaf9f7 !important; }
 
 .b--white {
-  border-color: #ffffff; }
+  border-color: #ffffff !important; }
 
 .b--inherit {
-  border-color: inherit; }
+  border-color: inherit !important; }
+
+.b--transparent {
+  border-color: transparent !important; }
 
 /* Base:
      br   = border-radius
@@ -686,7 +802,7 @@ modifiers: --color-name = each color variable name is also a border color name
 .br0 {
   border-radius: 0; }
 
-.br1 {
+.br1, .radio input[type="radio"]::before {
   border-radius: 0.125rem; }
 
 .br2 {
@@ -909,7 +1025,7 @@ modifiers: --color-name = each color variable name is also a border color name
 .bw0 {
   border-width: 0; }
 
-.bw1 {
+.bw1, .radio input[type="radio"]::before {
   border-width: 0.125rem; }
 
 .bw2 {
@@ -1027,115 +1143,6 @@ modifiers: --color-name = each color variable name is also a border color name
 
   .bl-0-l {
     border-left-width: 0; } }
-/* Base:
-      b = border
-    Modifiers:
-      a = all
-      t = top
-      r = right
-      b = bottom
-      l = left
-      n = none
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
-.ba {
-  border-style: solid; }
-
-.bt {
-  border-top-style: solid;
-  border-top-width: 1px; }
-
-.br {
-  border-right-style: solid;
-  border-right-width: 1px; }
-
-.bb {
-  border-bottom-style: solid;
-  border-bottom-width: 1px; }
-
-.bl {
-  border-left-style: solid;
-  border-left-width: 1px; }
-
-.bn {
-  border-style: none;
-  border-width: 0; }
-
-@media screen and (min-width: 48em) {
-  .ba-ns {
-    border-style: solid;
-    border-width: 1px; }
-
-  .bt-ns {
-    border-top-style: solid;
-    border-top-width: 1px; }
-
-  .br-ns {
-    border-right-style: solid;
-    border-right-width: 1px; }
-
-  .bb-ns {
-    border-bottom-style: solid;
-    border-bottom-width: 1px; }
-
-  .bl-ns {
-    border-left-style: solid;
-    border-left-width: 1px; }
-
-  .bn-ns {
-    border-style: none;
-    border-width: 0; } }
-@media screen and (min-width: 48em) and (max-width: 64em) {
-  .ba-m {
-    border-style: solid;
-    border-width: 1px; }
-
-  .bt-m {
-    border-top-style: solid;
-    border-top-width: 1px; }
-
-  .br-m {
-    border-right-style: solid;
-    border-right-width: 1px; }
-
-  .bb-m {
-    border-bottom-style: solid;
-    border-bottom-width: 1px; }
-
-  .bl-m {
-    border-left-style: solid;
-    border-left-width: 1px; }
-
-  .bn-m {
-    border-style: none;
-    border-width: 0; } }
-@media screen and (min-width: 64em) {
-  .ba-l {
-    border-style: solid;
-    border-width: 1px; }
-
-  .bt-l {
-    border-top-style: solid;
-    border-top-width: 1px; }
-
-  .br-l {
-    border-right-style: solid;
-    border-right-width: 1px; }
-
-  .bb-l {
-    border-bottom-style: solid;
-    border-bottom-width: 1px; }
-
-  .bl-l {
-    border-left-style: solid;
-    border-left-width: 1px; }
-
-  .bn-l {
-    border-style: none;
-    border-width: 0; } }
 /* 
 Media Query Extensions:
    -ns = not-small
@@ -1202,50 +1209,13 @@ Media Query Extensions:
 
   .shadow-5-l {
     box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2); } }
-html,
-body,
-div,
-article,
-section,
-main,
-footer,
-header,
-form,
-fieldset,
-legend,
-pre,
-code,
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-textarea,
-table,
-td,
-th,
-tr,
-input[type="email"],
-input[type="number"],
-input[type="password"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
-button,
-.border-box {
+html {
   box-sizing: border-box; }
 
-.content-box {
-  box-sizing: content-box; }
+*,
+*:after,
+*:before {
+  box-sizing: inherit; }
 
 /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -1592,10 +1562,10 @@ button,
     bottom: 0;
     left: 0; } }
 .pointer {
-  cursor: pointer; }
+  cursor: pointer !important; }
 
 .hover-pointer:hover {
-  cursor: pointer; }
+  cursor: pointer !important; }
 
 /*
    DISPLAY
@@ -2634,19 +2604,19 @@ button,
 */
 /* Height Scale */
 .h1 {
-  height: 1rem; }
+  height: 0.25rem; }
 
 .h2 {
-  height: 2rem; }
+  height: 0.5rem; }
 
 .h3 {
-  height: 4rem; }
+  height: 0.75rem; }
 
 .h4 {
-  height: 8rem; }
+  height: 1rem; }
 
-.h5 {
-  height: 16rem; }
+.h5, .radio input[type="radio"] {
+  height: 1.5rem; }
 
 /* Height Percentages - Based off of height of parent */
 .h-25 {
@@ -2689,19 +2659,19 @@ button,
 
 @media screen and (min-width: 48em) {
   .h1-ns {
-    height: 1rem; }
+    height: 0.25rem; }
 
   .h2-ns {
-    height: 2rem; }
+    height: 0.5rem; }
 
   .h3-ns {
-    height: 4rem; }
+    height: 0.75rem; }
 
   .h4-ns {
-    height: 8rem; }
+    height: 1rem; }
 
   .h5-ns {
-    height: 16rem; }
+    height: 1.5rem; }
 
   .h-25-ns {
     height: 25%; }
@@ -2740,19 +2710,19 @@ button,
     height: inherit; } }
 @media screen and (min-width: 48em) and (max-width: 64em) {
   .h1-m {
-    height: 1rem; }
+    height: 0.25rem; }
 
   .h2-m {
-    height: 2rem; }
+    height: 0.5rem; }
 
   .h3-m {
-    height: 4rem; }
+    height: 0.75rem; }
 
   .h4-m {
-    height: 8rem; }
+    height: 1rem; }
 
   .h5-m {
-    height: 16rem; }
+    height: 1.5rem; }
 
   .h-25-m {
     height: 25%; }
@@ -2791,19 +2761,19 @@ button,
     height: inherit; } }
 @media screen and (min-width: 64em) {
   .h1-l {
-    height: 1rem; }
+    height: 0.25rem; }
 
   .h2-l {
-    height: 2rem; }
+    height: 0.5rem; }
 
   .h3-l {
-    height: 4rem; }
+    height: 0.75rem; }
 
   .h4-l {
-    height: 8rem; }
+    height: 1rem; }
 
   .h5-l {
-    height: 16rem; }
+    height: 1.5rem; }
 
   .h-25-l {
     height: 25%; }
@@ -4827,5 +4797,87 @@ Media Query Extensions:
   max-width: 37rem; }
 @media screen and (min-width: 64em) {
   max-width: 37rem; }
+/*
+
+  Z-INDEX
+
+  Base
+    z = z-index
+
+  Modifiers
+    -0 = literal value 0
+    -1 = literal value 1
+    -2 = literal value 2
+    -3 = literal value 3
+    -4 = literal value 4
+    -5 = literal value 5
+    -999 = literal value 999
+    -9999 = literal value 9999
+
+    -max = largest accepted z-index value as integer
+
+    -inherit = string value inherit
+    -initial = string value initial
+    -unset = string value unset
+
+  MDN: https://developer.mozilla.org/en/docs/Web/CSS/z-index
+  Spec: http://www.w3.org/TR/CSS2/zindex.html
+  Articles:
+    https://philipwalton.com/articles/what-no-one-told-you-about-z-index/
+
+  Tips on extending:
+  There might be a time worth using negative z-index values.
+  Or if you are using tachyons with another project, you might need to
+  adjust these values to suit your needs.
+
+*/
+.z-0 {
+  z-index: 0; }
+
+.z-1 {
+  z-index: 1; }
+
+.z-2 {
+  z-index: 2; }
+
+.z-3 {
+  z-index: 3; }
+
+.z-4 {
+  z-index: 4; }
+
+.z-5 {
+  z-index: 5; }
+
+.z-999 {
+  z-index: 999; }
+
+.z-9999 {
+  z-index: 9999; }
+
+.z-max {
+  z-index: 2147483647; }
+
+.z-inherit {
+  z-index: inherit; }
+
+.z-initial {
+  z-index: initial; }
+
+.z-unset {
+  z-index: unset; }
+
+.radio {
+  min-height: 3.25rem; }
+  .radio input[type="radio"]::before {
+    background-color: #f2f2f2;
+    content: '';
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1; }
 
 /*# sourceMappingURL=output.css.map */

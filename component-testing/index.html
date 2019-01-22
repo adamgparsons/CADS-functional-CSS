@@ -17,35 +17,42 @@
 
   <button class="open-sans bg-turqouise-primary b--turqouise-primary heritage-blue dib fw6 ph4 pv3 br1 bw1 lh-copy hover-bg-turquoise-dark pointer hover-b-turquoise-dark focus-b-heritage-yellow outline-0 content-box">
     Primary button
-  </button> <input class="open-sans dib fw6 input-reset ba lh-copy pa3 br1 b--light-grey bw1 focus-b-heritage-yellow outline-0">
+  </button>
+  <input class="open-sans dib fw6 input-reset ba lh-copy pa3 br1 b--light-grey bw1 focus-b-heritage-yellow outline-0">
+
   <br>
   <br>
-  <fieldset class="open-sans bn pa0 ma0">
+
+  <div class="open-sans bn pa0 ma0">
     <label class=" open-sans db fw7 lh-copy mb3" for="firstname">First name:</label>
     <div>
       <input class="open-sans dib fw6 input-reset ba lh-copy ph4 pv3 br1 b--light-grey bw1 focus-b-heritage-yellow outline-0">
     </div>
-  </fieldset>
+  </div>
+
   <br>
   <br>
+
   <fieldset class="open-sans bn pa0 ma0">
     <legend class=" open-sans db fw7 lh-copy mb2">Did this help?</legend>
     <!-- Fieldset item-->
     <div class="db">
       <!-- Radio -->
-      <div class="pointer dib ma0 ml1 ph4 pv3 ba bw1 b--light-grey bg-pale-grey br1 hover-b--grey ">
-        <input id="yes" name="feedback" type="radio" class="lh-copy border-box">
-        <label for="yes" class="ml1 lh-copy fw6">Yes</label>
+      <div class="ma0 ml1 ph4 pv3 bg-pale-grey relative z-1 inline-flex items-center radio">
+        <input value="yes" id="yes" name="feedback" type="radio">
+        <label for="yes" class="ml2 lh-copy fw6 pointer">Yes</label>
       </div>
     </div>
     <!-- Fieldset item-->
     <div class="db mv2">
       <!-- Radio -->
-      <div class="pointer dib ma0 ml1 ph4 pv3 ba bw1 b--light-grey bg-pale-grey br1 hover-b--grey ">
-        <input id="no" name="feedback" type="radio" class="lh-copy border-box">
-        <label for="no" class="ml1 lh-copy fw6">No</label>
+      <div class="ma0 ml1 ph4 pv3 bg-pale-grey relative z-1 inline-flex items-center radio">
+        <input value="no" id="no" name="feedback" type="radio">
+        <label for="no" class="ml2 lh-copy fw6">No</label>
       </div>
-    </div><input class="open-sans dib fw6 input-reset ba lh-copy pa3 br1 b--light-grey bw1 focus-b-heritage-yellow outline-0">
+    </div>
+
+    <input class="open-sans dib fw6 input-reset ba lh-copy pa3 br1 b--light-grey bw1 focus-b-heritage-yellow outline-0">
 
   </fieldset>
 </body>

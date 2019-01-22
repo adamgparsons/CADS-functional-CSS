@@ -1,0 +1,47 @@
+// ========================================================
+// @cads-support: radios
+// ========================================================
+//
+
+.radio {
+  min-height: $height-3 + $height-7;
+
+  input[type="radio"] {
+    @extend .h5;
+
+    &::before {
+      @extend .ba;
+      @extend .b--light-grey;
+      @extend .br1;
+      @extend .bw1;
+      background-color: #f2f2f2;
+      content: '';
+      cursor: pointer;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    &:checked {
+      &::before {
+        @extend .bg-blue-mid;
+        @extend .b--blue-primary;
+      }
+    }
+
+    &:hover {
+      &::before {
+        @extend .b--grey;
+      }
+    }
+
+    &:focus {
+      &::before {
+        @extend .b--heritage-yellow;
+      }
+    }
+  }
+}
