@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "compile:css": "node-sass --output-style expanded --source-map ./styles/main.scss ./component-testing/output.css",
-    "watch:css": "nodemon --watch ./styles --ext scss --exec \"npm run compile:css\""
+    "watch:css": "nodemon --watch ./styles --ext scss --exec \"npm run compile:css\"",
+    "start": "browser-sync start --server 'component-testing' --files 'component-testing'"
   },
   "author": "",
   "license": "ISC",
