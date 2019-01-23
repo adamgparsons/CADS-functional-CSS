@@ -1,19 +1,20 @@
 // ========================================================
-// @cads-support: hover
+// @cads-support: foucs
 // ========================================================
 //
+
 @each $color-name,
 $color-value in $color-list {
   @each $color in $color-list {
-    .hover-#{$color-name}:hover {
+    .focus-#{$color-name}:focus {
       color: #{$color-value} !important
     }
 
-    .hover-bg-#{$color-name}:hover {
+    .focus-bg-#{$color-name}:focus {
       background-color: #{$color-value} !important
     }
 
-    .hover-b-#{$color-name}:hover {
+    .focus-b-#{$color-name}:focus {
       border-color: #{$color-value} !important
     }
   }

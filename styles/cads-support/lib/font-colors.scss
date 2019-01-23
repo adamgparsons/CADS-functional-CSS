@@ -1,12 +1,11 @@
 // ========================================================
-// @cads-support: background-colors
+// @cads-support: font-colors
 // ========================================================
 //
 @each $color-name,
 $color-value in $color-list {
-  $i: index($color-list, $color-name);
 
-  .bg-#{$color-name} {
-    background-color: #{$color-value} !important;
+  .#{$color-name} {
+    color: #{$color-value} !important;
   }
 }
