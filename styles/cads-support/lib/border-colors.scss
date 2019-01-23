@@ -2,6 +2,12 @@
 // @cads-support: border-colors
 // ========================================================
 //
+
+// NOTE:
+// flaky cascade causes issues with states such as :checked, :hover and :focus.
+// these colours need to be in a specific order because of this... 
+// [REFACTOR].
+
 /*
 BORDER COLORS
 Border colors can be used to extend the base
@@ -14,69 +20,94 @@ Base:
 
 modifiers: --color-name = each color variable name is also a border color name
   */
-.b--heritage-blue {
-  border-color: $heritage-blue;
-}
-.b--heritage-yellow {
-  border-color: $heritage-yellow;
-}
-.b--heritage-blue-40 {
-  border-color: $heritage-blue-40;
-}
-.b--heritage-yellow-40 {
-  border-color: $heritage-yellow-40;
-}
-.b--blue-dark {
-  border-color: $blue-dark;
-}
-.b--blue-primary {
-  border-color: $blue-primary;
-}
-.b--blue-mid {
-  border-color: $blue-mid;
-}
-.b--blue-light {
-  border-color: $blue-light;
-}
-.b--turquoise-dark {
-  border-color: $turquoise-dark;
-}
-.b--turqouise-primary {
-  border-color: $turqouise-primary;
-}
-.b--turqouise-mid {
-  border-color: $turqouise-mid;
-}
-.b--turqouise-light {
-  border-color: $turqouise-light;
-}
-.b--red-primary {
-  border-color: $red-primary;
-}
-.b--red-light {
-  border-color: $red-light;
-}
 .b--black {
-  border-color: $black;
+  border-color: $black !important;
 }
+
 .b--dark-grey {
-  border-color: $dark-grey;
+  border-color: $dark-grey !important;
 }
+
 .b--mid-grey {
-  border-color: $mid-grey;
+  border-color: $mid-grey !important;
 }
+
 .b--grey {
-  border-color: $grey;
+  border-color: $grey !important;
 }
+
 .b--light-grey {
-  border-color: $light-grey;
+  border-color: $light-grey !important;
 }
+
 .b--pale-grey {
-  border-color: $pale-grey;
+  border-color: $pale-grey !important;
 }
+
+.b--heritage-blue {
+  border-color: $heritage-blue !important;
+}
+
+.b--heritage-blue-40 {
+  border-color: $heritage-blue-40 !important;
+}
+
+.b--blue-dark {
+  border-color: $blue-dark !important;
+}
+
+.b--blue-primary {
+  border-color: $blue-primary !important;
+}
+
+.b--blue-mid {
+  border-color: $blue-mid !important;
+}
+
+.b--blue-light {
+  border-color: $blue-light !important;
+}
+
+.b--heritage-yellow {
+  border-color: $heritage-yellow !important;
+}
+
+.b--heritage-yellow-40 {
+  border-color: $heritage-yellow-40 !important;
+}
+
+.b--red-primary {
+  border-color: $red-primary !important;
+}
+
+.b--red-light {
+  border-color: $red-light !important;
+}
+
+.b--turquoise-dark {
+  border-color: $turquoise-dark !important;
+}
+
+.b--turqouise-primary {
+  border-color: $turqouise-primary !important;
+}
+
+.b--turqouise-mid {
+  border-color: $turqouise-mid !important;
+}
+
+.b--turqouise-light {
+  border-color: $turqouise-light !important;
+}
+
 .b--white {
-  border-color: $white;
+  border-color: $white !important;
 }
+
 .b--inherit {
-  border-color: inherit;
+  border-color: inherit !important;
+}
+
+.b--transparent {
+  border-color: transparent !important;
 }

@@ -13,11 +13,11 @@
 @import "./lib/background-colors.scss";
 @import "./lib/background-position.scss";
 @import "./lib/background-size.scss";
+@import "./lib/borders.scss";
 @import "./lib/border-colors.scss";
 @import "./lib/border-radius.scss";
 @import "./lib/border-style.scss";
 @import "./lib/border-width.scss";
-@import "./lib/borders.scss";
 @import "./lib/box-shadow.scss";
 @import "./lib/box-sizing.scss";
 @import "./lib/clear-fix.scss";
@@ -39,3 +39,7 @@
 @import "./lib/spacing.scss";
 @import "./lib/text-colors.scss";
 @import "./lib/typography.scss";
+@import "./lib/zindex.scss";
+
+// components
+@import "./lib/radio.scss";

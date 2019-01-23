@@ -72,11 +72,13 @@ $serif: georgia,
 serif !default;
 
 // height - MAY NEED TO BE LOOKED AT
-$height-1: 1rem !default; //16px
-$height-2: 2rem !default; // 32px
-$height-3: 4rem !default; // 64px
-$height-4: 8rem !default; // 128px
-$height-5: 16rem !default; // 256px
+$height-1: 0.25rem !default; // 4px
+$height-2: 0.5rem !default; // 8px
+$height-3: 0.75rem !default; // 12px
+$height-4: 1rem !default; // 16px
+$height-5: 1.5rem !default; // 24px
+$height-6: 2rem !default; // 32px
+$height-7: 2.5rem !default; // 40px
 
 // line height
 $line-height-solid: 1 !default;
@@ -100,12 +102,4 @@ $spacing-2xl: 2.5rem !default; // 40px
 
 .before-border:before {
   border-color: #004b88
-}
-
-h1 {}
-
-input[type="radio"]:before,
-input[type="checkbox"]:before {
-  @extend .bw1;
-  @extend .
 }
