@@ -99,3 +99,90 @@ $scales: (
   7: 2rem,
   8: 2.5rem
 );
+
+// need to combine font weights and numbers
+// ie 800 and extra bold
+// need to implement rem calc
+
+// mobile
+
+h1,
+.h1 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 800;
+  color: #004b88;
+}
+
+h2,
+.h2 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #004b88;
+}
+
+h3,
+.h3 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #004b88;
+}
+
+// tablet and up
+@media #{$breakpoint-not-small} {
+  h1,
+  .h1 {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 800;
+    color: #004b88;
+  }
+
+  h2,
+  .h2 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #004b88;
+  }
+
+  h3,
+  .h3 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #004b88;
+  }
+}
+
+p,
+.p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #004b88;
+}
+
+.f1 {
+  font-size: $font-size-1;
+}
+.f2 {
+  font-size: $font-size-2;
+}
+.f3 {
+  font-size: $font-size-3;
+}
+.f4 {
+  font-size: $font-size-4;
+}
+.f5 {
+  font-size: $font-size-5;
+}
+
+$font-size-1: 14px;
+$font-size-2: 16px;
+$font-size-3: 20px;
+$font-size-4: 28px;
+$font-size-5: 36px;
