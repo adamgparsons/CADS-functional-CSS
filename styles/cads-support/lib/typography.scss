@@ -11,7 +11,7 @@
 */
 
 // Line limit width is 592px. This is based on the ideal words per line for readability.
-$line-limit-width: $spacing-md * 37;
+$line-limit-width: 592px;
 
 .line-limit-width {
   max-width: $line-limit-width;

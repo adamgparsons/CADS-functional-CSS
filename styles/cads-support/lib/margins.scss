@@ -1,0 +1,79 @@
+// ========================================================
+// @cads-support: margins
+// ========================================================
+//
+
+// utilities
+@each $scaleKey, $scaleVal in $scales {
+  @each $sideKey, $sideVal in $sides {
+    .m#{$sideKey}-#{$scaleKey} {
+      margin#{$sideVal}: #{$scaleVal};
+    }
+  }
+  .mv-#{$scaleKey} {
+    margin-top: #{$scaleVal};
+    margin-bottom: #{$scaleVal};
+  }
+
+  .mh-#{$scaleKey} {
+    margin-left: #{$scaleVal};
+    margin-right: #{$scaleVal};
+  }
+}
+
+@media #{$breakpoint-not-small} {
+  @each $scaleKey, $scaleVal in $scales {
+    @each $sideKey, $sideVal in $sides {
+      .m#{$sideKey}-#{$scaleKey}-ns {
+        margin#{$sideVal}: #{$scaleVal};
+      }
+    }
+    .mv-#{$scaleKey}-ns {
+      margin-top: #{$scaleVal};
+      margin-bottom: #{$scaleVal};
+    }
+
+    .mh-#{$scaleKey}-ns {
+      margin-left: #{$scaleVal};
+      margin-right: #{$scaleVal};
+    }
+  }
+}
+
+@media #{$breakpoint-medium} {
+  @each $scaleKey, $scaleVal in $scales {
+    @each $sideKey, $sideVal in $sides {
+      .m#{$sideKey}-#{$scaleKey}-m {
+        margin#{$sideVal}: #{$scaleVal};
+      }
+    }
+    .mv-#{$scaleKey}-m {
+      margin-top: #{$scaleVal};
+      margin-bottom: #{$scaleVal};
+    }
+
+    .mh-#{$scaleKey}-m {
+      margin-left: #{$scaleVal};
+      margin-right: #{$scaleVal};
+    }
+  }
+}
+
+@media #{$breakpoint-large} {
+  @each $scaleKey, $scaleVal in $scales {
+    @each $sideKey, $sideVal in $sides {
+      .m#{$sideKey}-#{$scaleKey}-l {
+        margin#{$sideVal}: #{$scaleVal};
+      }
+    }
+    .mv-#{$scaleKey}-l {
+      margin-top: #{$scaleVal};
+      margin-bottom: #{$scaleVal};
+    }
+
+    .mh-#{$scaleKey}-l {
+      margin-left: #{$scaleVal};
+      margin-right: #{$scaleVal};
+    }
+  }
+}
