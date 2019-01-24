@@ -108,24 +108,33 @@ $scales: (
 
 h1,
 .h1 {
-  font-size: 28px;
+  // font-size: 28px;
+  @extend .f4;
   line-height: 36px;
+  // line height 1.28
+  // potential line height 1.25 (35px)
+  // potential line height 1.2 (
   font-weight: 800;
   color: #004b88;
 }
 
 h2,
 .h2 {
-  font-size: 20px;
+  // font-size: 20px;
+  @extend .f3;
   line-height: 28px;
+  // line height 1.4
+  // potential line height 1.5 (30px)
   font-weight: 700;
   color: #004b88;
 }
 
 h3,
 .h3 {
-  font-size: 20px;
+  // font-size: 20px;
+  @extend .f3;
   line-height: 28px;
+  // line height 1.4
   font-weight: 600;
   color: #004b88;
 }
@@ -134,7 +143,8 @@ h3,
 @media #{$breakpoint-not-small} {
   h1,
   .h1 {
-    font-size: 36px;
+    // font-size: 36px;
+    @extend .f5;
     line-height: 48px;
     font-weight: 800;
     color: #004b88;
@@ -142,7 +152,8 @@ h3,
 
   h2,
   .h2 {
-    font-size: 28px;
+    // font-size: 28px;
+    @extend .f4;
     line-height: 36px;
     font-weight: 700;
     color: #004b88;
@@ -150,7 +161,8 @@ h3,
 
   h3,
   .h3 {
-    font-size: 20px;
+    // font-size: 20px;
+    @extend .f3;
     line-height: 28px;
     font-weight: 600;
     color: #004b88;
@@ -159,11 +171,24 @@ h3,
 
 p,
 .p {
-  font-size: 16px;
+  // font-size: 16px;
+  @extend .f2;
   line-height: 24px;
   font-weight: 400;
   color: #004b88;
 }
+
+$font-size-1: 14px;
+$font-size-2: 16px;
+$font-size-3: 20px;
+$font-size-4: 28px;
+$font-size-5: 36px;
+
+$line-height-1: 20px;
+$line-height-2: 24px;
+$line-height-3: 28px;
+$line-height-4: 36px;
+$line-height-5: 48px;
 
 .f1 {
   font-size: $font-size-1;
@@ -181,8 +206,22 @@ p,
   font-size: $font-size-5;
 }
 
-$font-size-1: 14px;
-$font-size-2: 16px;
-$font-size-3: 20px;
-$font-size-4: 28px;
-$font-size-5: 36px;
+.lh-1 {
+  line-height: $font-size-1;
+}
+
+.lh-2 {
+  line-height: $font-size-2;
+}
+
+.lh-3 {
+  line-height: $font-size-3;
+}
+
+.lh-4 {
+  line-height: $font-size-4;
+}
+
+.lh-5 {
+  line-height: $font-size-5;
+}

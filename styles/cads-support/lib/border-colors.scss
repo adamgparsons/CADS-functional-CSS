@@ -3,11 +3,10 @@
 // ========================================================
 //
 
-@each $color-name,
-$color-value in $color-list {
-  $i: index($color-list, $color-name);
+@each $colorKey, $colorVal in $color-list {
+  $i: index($color-list, $colorKey);
 
-  .b-#{$color-name} {
-    border-color: #{$color-value} !important;
+  .b-#{$colorKey} {
+    border-color: #{$colorVal} !important;
   }
 }
