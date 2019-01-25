@@ -3,64 +3,32 @@
 // ========================================================
 //
 
-/*
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
-
-.lh-solid {
-  line-height: $line-height-solid;
-}
-
-.lh-title {
-  line-height: $line-height-title;
-}
-
-.lh-copy {
-  line-height: $line-height-copy;
+@each $line-heightKey, $line-heightVal in $line-height {
+  .lh-#{$line-heightKey} {
+    line-height: #{$line-heightVal};
+  }
 }
 
 @media #{$breakpoint-not-small} {
-  .lh-solid-ns {
-    line-height: $line-height-solid;
-  }
-
-  .lh-title-ns {
-    line-height: $line-height-title;
-  }
-
-  .lh-copy-ns {
-    line-height: $line-height-copy;
+  @each $line-heightKey, $line-heightVal in $line-height {
+    .lh-#{$line-heightKey}-ns {
+      line-height: #{$line-heightVal};
+    }
   }
 }
 
 @media #{$breakpoint-medium} {
-  .lh-solid-m {
-    line-height: $line-height-solid;
-  }
-
-  .lh-title-m {
-    line-height: $line-height-title;
-  }
-
-  .lh-copy-m {
-    line-height: $line-height-copy;
+  @each $line-heightKey, $line-heightVal in $line-height {
+    .lh-#{$line-heightKey}-m {
+      line-height: #{$line-heightVal};
+    }
   }
 }
 
 @media #{$breakpoint-large} {
-  .lh-solid-l {
-    line-height: $line-height-solid;
-  }
-
-  .lh-title-l {
-    line-height: $line-height-title;
-  }
-
-  .lh-copy-l {
-    line-height: $line-height-copy;
+  @each $line-heightKey, $line-heightVal in $line-height {
+    .lh-#{$line-heightKey}-l {
+      line-height: #{$line-heightVal};
+    }
   }
 }

@@ -7,42 +7,43 @@
   font-weight: normal;
 }
 
-.bold {
-  font-weight: bold;
-}
-
-.fw1 {
+.fw-1 {
   font-weight: 100;
 }
 
-.fw2 {
+.fw-2 {
   font-weight: 200;
 }
 
-.fw3 {
+.fw-3,
+.light {
   font-weight: 300;
 }
 
-.fw4 {
+.fw-4,
+.regular {
   font-weight: 400;
 }
 
-.fw5 {
+.fw-5 {
   font-weight: 500;
 }
 
-.fw6 {
+.fw-6,
+.semi-bold {
   font-weight: 600;
 }
 
-.fw7 {
+.fw-7,
+.bold {
   font-weight: 700;
 }
 
-.fw8 {
+.fw-8,
+.extra-bold {
   font-weight: 800;
 }
 
-.fw9 {
+.fw-9 {
   font-weight: 900;
 }
