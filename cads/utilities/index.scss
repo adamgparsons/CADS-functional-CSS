@@ -3,7 +3,7 @@
 // ========================================================
 //
 
-@import "@citizensadvice/cads-support/"; // order matters
+@import "../support/index.scss"; // order matters
 
 @import "./lib/backgrounds/background-colors";
 @import "./lib/backgrounds/background-position";
@@ -15,7 +15,7 @@
 @import "./lib/borders/border-style";
 @import "./lib/borders/border-width";
 
-@import "./lib/interactive/hover"; // order matters
+@import "./lib/interactive/hovers"; // order matters
 @import "./lib/interactive/focus"; // order matters
 @import "./lib/interactive/cursor";
 
@@ -28,7 +28,7 @@
 @import "./lib/layout/z-index";
 
 @import "./lib/spacing/margins";
-@import "./lib/spacing/paddings";
+@import "./lib/spacing/padding";
 
 @import "./lib/typography/font-family";
 @import "./lib/typography/font-size";

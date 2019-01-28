@@ -3,7 +3,7 @@
 // ========================================================
 //
 
-@import "@citizensadvice/cads-support/"; // order matters
+@import "../support/index.scss"; // order matters
 
 @import "./lib/normalize"; // order matters
 @import "./lib/typography";

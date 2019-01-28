@@ -3,11 +3,7 @@
 // ========================================================
 //
 
-.sans-serif {
-  font-family: $sans-serif !important;
-}
-
 .open-sans {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: $font-family !important;
   -webkit-font-smoothing: antialiased !important;
 }
