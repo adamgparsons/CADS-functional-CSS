@@ -8,7 +8,7 @@
     <meta name="description" content="The HTML5 Herald" />
     <meta name="author" content="SitePoint" />
 
-    <link rel="stylesheet" type="text/css" href="output.css" />
+    <link rel="stylesheet" type="text/css" href="output.css" /> 
   </head>
 
   <body class="open-sans text-black p-3">
@@ -104,5 +104,27 @@
         </div>
       </div>
     </fieldset>
+
+    <br>
+    <br>
+
+    <fieldset class="mb-4 border-none open-sans">
+      <legend class="open-sans block bold line-height-2 mb-2">Right and/or left?</legend>
+    
+      <div class="block mb-2 mr-2">
+        <div class="open-sans relative inline-block  items-center text-black semi-bold line-height-3 pv-3 ph-3 pointer checkbox z-index-0">
+          <input checked id="right" value="right" name="direction" type="checkbox" class="">
+          <label for="right">Right</label>
+        </div>
+      </div>
+    
+      <div class="block mb-2 mr-2">
+        <div class="checkbox">
+          <input id="left" value="left" name="direction" type="checkbox">
+          <label for="left">Left</label>
+        </div>
+      </div>
+    </fieldset>
+
   </body>
 </html>
