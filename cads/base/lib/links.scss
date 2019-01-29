@@ -1,0 +1,20 @@
+// ========================================================
+// @cads-base: links
+// ========================================================
+//
+
+a,
+.a {
+  border-bottom: 1px solid currentColor;
+  color: $heritage-blue;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $blue-mid;
+  }
+
+  &:focus {
+    outline: $border-scale-1 solid $heritage-yellow;
+  }
+
+}

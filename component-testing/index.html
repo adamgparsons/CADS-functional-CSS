@@ -1,60 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8">
+    <title>Button test</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
 
-  <title>Button test</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+    <link rel="stylesheet" type="text/css" href="output.css" />
+  </head>
 
-  <link rel="stylesheet" type="text/css" href="output.css">
+  <body class="open-sans text-black p-3">
+    <button
+      class="open-sans semi-bold bg-turqouise-primary border-turqouise-primary text-heritage-blue inline-block ph-4 pv-3 border-radius-1 border border-width-1 line-height-2 hover-bg-turquoise-dark pointer hover-border-turquoise-dark focus-border-heritage-yellow outline-none content-box"
+    >
+      Primary button
+    </button>
 
-</head>
+    <br />
+    <br />
 
-<body class="open-sans pa3">
-
-  <button class="open-sans bg-turqouise-primary b--turqouise-primary heritage-blue dib fw6 ph4 pv3 br1 bw1 lh-copy hover-bg-turquoise-dark pointer hover-b-turquoise-dark focus-b-heritage-yellow outline-0 content-box">
-    Primary button
-  </button>
-  <input class="open-sans dib fw6 input-reset ba lh-copy pa3 br1 b--light-grey bw1 focus-b-heritage-yellow outline-0">
-
-  <br>
-  <br>
-
-  <div class="open-sans bn pa0 ma0">
-    <label class=" open-sans db fw7 lh-copy mb3" for="firstname">First name:</label>
-    <div>
-      <input class="open-sans dib fw6 input-reset ba lh-copy ph4 pv3 br1 b--light-grey bw1 focus-b-heritage-yellow outline-0">
-    </div>
-  </div>
-
-  <br>
-  <br>
-
-  <fieldset class="open-sans bn pa0 ma0">
-    <legend class=" open-sans db fw7 lh-copy mb2">Did this help?</legend>
-    <!-- Fieldset item-->
-    <div class="db">
-      <!-- Radio -->
-      <div class="ma0 ml1 ph4 pv3 bg-pale-grey relative z-1 inline-flex items-center radio">
-        <input value="yes" id="yes" name="feedback" type="radio">
-        <label for="yes" class="ml2 lh-copy fw6 pointer">Yes</label>
-      </div>
-    </div>
-    <!-- Fieldset item-->
-    <div class="db mv2">
-      <!-- Radio -->
-      <div class="ma0 ml1 ph4 pv3 bg-pale-grey relative z-1 inline-flex items-center radio">
-        <input value="no" id="no" name="feedback" type="radio">
-        <label for="no" class="ml2 lh-copy fw6">No</label>
+    <div class="open-sans border-none p-0 m-0">
+      <label class=" open-sans bold line-height-2 block mb-2" for="firstname">First name:</label>
+      <div>
+        <input
+          class="open-sans semi-bold line-height-2 inline-block input-reset border border-width-1 border-radius-1 border-light-grey ph-4 pv-3 focus-border-heritage-yellow outline-none"
+        />
       </div>
     </div>
 
-    <input class="open-sans dib fw6 input-reset ba lh-copy pa3 br1 b--light-grey bw1 focus-b-heritage-yellow outline-0">
+    <br />
+    <br />
 
-  </fieldset>
-</body>
+    <fieldset class="open-sans border-none p-0 m-0">
+      <legend class="open-sans block bold line-height-2 mb-2">Did this help?</legend>
+      <!-- Fieldset item-->
+      <div class="block">
+        <!-- Radio -->
+        <div
+          class="m-0 ml-1 ph-4 pv-3 bg-pale-grey relative z-index-100 inline-flex items-center bold text-black radio border-radius-1"
+        >
+          <input value="yes" id="yes" name="feedback" type="radio" />
+          <label for="yes" class="ml-2 line-height-2 semi-bold pointer">Yes</label>
+        </div>
+      </div>
+      <!-- Fieldset item-->
+      <div class="block mv-2">
+        <!-- Radio -->
+        <div
+          class="m-0 ml-1 ph-4 pv-3 bg-pale-grey relative z-index-100 inline-flex items-center bold text-black radio border-radius-1"
+        >
+          <input value="no" id="no" name="feedback" type="radio" />
+          <label for="no" class="ml-2 line-height-2 semi-bold">No</label>
+        </div>
+      </div>
+    </fieldset>
+    <br />
+    <br />
+    <a href="'#'">Link</a> <br />
+    <br />
+    <!--Well  -->
+    <div class="border border-width-1 border-radius-1 border-heritage-blue p-4 pb-5">
+      <h2 class="mt-0">Hello World!</h2>
+      <p>
+        Get six alpha pups in here for a focus group today shall be a cloudy day, thanks to blue sky
+        thinking, we can now deploy our new ui to the cloud yet strategic fit.
+      </p>
+      <button
+        class="open-sans semi-bold bg-turqouise-primary border-turqouise-primary text-heritage-blue inline-block ph-4 pv-3 border-radius-1 border border-width-1 line-height-2 hover-bg-turquoise-dark pointer hover-border-turquoise-dark focus-border-heritage-yellow outline-none content-box"
+      >
+        Next
+      </button>
+    </div>
 
+    <br />
+    <br />
+
+    <fieldset class="mb-4 border-none open-sans">
+      <legend class="open-sans block bold line-height-2 mb-2">Enter your date of purchase
+        <span class="text-mid-grey block regular">For example: 30 4 2017</span>
+      </legend>
+      
+
+      <div class="inline-block mb-2 mr-2">
+        <label class="block bold line-height-2 mb-2" for="day">Day:</label>
+        <div class="">
+          <input id="day" type="text" pattern="[0-9]{2}" maxlength="2" minlength="1" class="open-sans inline-block semi-bold line-height-2 ph-4 pv-3 border border-radius-1 border-width-1 border-light-grey char-width-2 outline-none focus-border-heritage-yellow " />
+        </div>
+      </div>
+
+      <div class="inline-block mb-2 mr-2">
+        <label class="block bold line-height-2 mb-2" for="month">Month:</label>
+        <div class="">
+          <input id="month" type="text" pattern="[0-9]{2}" maxlength="2" minlength="1" class="open-sans inline-block semi-bold line-height-2 ph-4 pv-3 border border-radius-1 border-width-1 border-light-grey char-width-2 outline-none focus-border-heritage-yellow "/>
+        </div>
+      </div>
+
+      <div class="inline-block mb-2 mr-2">
+        <label class="block bold line-height-2 mb-2" for="year">Year:</label>
+        <div class="">
+          <input id="year" type="text" pattern="[0-9]{4}" maxlength="4" minlength="1" class="open-sans inline-block semi-bold line-height-2 ph-4 pv-3 border border-radius-1 border-width-1 border-light-grey char-width-4 outline-none focus-border-heritage-yellow "/>
+        </div>
+      </div>
+    </fieldset>
+  </body>
 </html>

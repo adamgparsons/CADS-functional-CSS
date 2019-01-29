@@ -7,14 +7,14 @@
   min-height: $height-3 + $height-7;
 
   input[type="radio"] {
-    @extend .h5;
+    height: $height-5;
 
     &::before {
-      @extend .ba;
-      @extend .b-light-grey;
-      @extend .br1;
-      @extend .bw1;
-      background-color: #f2f2f2;
+      border-style: solid !important;
+      border-color: $light-grey;
+      border-radius: $border-scale-1;
+      border-width: $border-scale-1;
+      background-color: $pale-grey;
       content: '';
       cursor: pointer;
       height: 100%;
@@ -27,20 +27,20 @@
 
     &:checked {
       &::before {
-        @extend .bg-blue-mid;
-        @extend .b-blue-primary;
+        background-color: $blue-mid;
+        border-color: $blue-dark
       }
     }
 
     &:hover {
       &::before {
-        @extend .b-grey;
+        border-color: $grey;
       }
     }
 
     &:focus {
       &::before {
-        @extend .b-heritage-yellow;
+        border-color: $heritage-yellow;
       }
     }
   }
