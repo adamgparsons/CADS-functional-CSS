@@ -4856,7 +4856,6 @@ html {
 
 .checkbox {
   min-height: 1.75rem;
-  position: relative;
 }
 
 .checkbox input[type="checkbox"] {
