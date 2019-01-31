@@ -3,3 +3,5 @@ npm-debug.log
 .DS_STORE
 *.swp
 .sass-cache
+component-testing/output.css
+component-testing/output.css.map
