@@ -3,17 +3,19 @@
 // ========================================================
 //
 
-.radio {
+.radio,
+.checkbox {
   min-height: $height-3 + $height-7;
 
-  input[type="radio"] {
+  input[type="radio"],
+  input[type="checkbox"] {
     height: $height-5;
 
     &::before {
       border-style: solid !important;
       border-color: $light-grey;
-      border-radius: $border-scale-1;
-      border-width: $border-scale-1;
+      border-radius: $border-scale-2;
+      border-width: $border-scale-2;
       background-color: $pale-grey;
       content: '';
       cursor: pointer;
