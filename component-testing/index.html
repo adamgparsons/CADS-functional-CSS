@@ -1,113 +1,120 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8" />
+    <title>Button test</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
 
-  <title>Button test</title>
-  <meta name="description" content="The HTML5 Herald" />
-  <meta name="author" content="SitePoint" />
+    <link rel="stylesheet" type="text/css" href="output.css" />
+  </head>
 
-  <link rel="stylesheet" type="text/css" href="output.css" />
-</head>
+  <body class="black p-5">
+    <h1>Grids</h1>
 
-<body class="black p-3">
-  <button class="semi-bold bg-turqouise-primary b-turqouise-primary heritage-blue inline-block ph-4 pv-3 b-radius-2 ba b-width-2 lh-2 hover-bg-turquoise-dark pointer hover-b-turquoise-dark focus-b-heritage-yellow outline-none content-box">
-    Primary button
-  </button>
+    <h2>Flex based grid</h2>
 
-  <br />
-  <br />
-
-  <div class="b-none p-0 m-0">
-    <label class="bold lh-2 block mb-2" for="firstname">First name:</label>
-    <div>
-      <input class="semi-bold lh-2 inline-block input-reset ba b-width-2 b-radius-2 b-light-grey ph-4 pv-3 focus-b-heritage-yellow outline-none" />
-    </div>
-  </div>
-
-  <br />
-  <br />
-
-  <fieldset class="b-none p-0 m-0">
-    <legend class="block bold lh-2 mb-2">Did this help?</legend>
-    <!-- Fieldset item-->
-    <div class="block">
-      <!-- Radio -->
-      <div class="m-0 ml-1 ph-4 pv-3 bg-pale-grey relative z-index-100 inline-flex items-center bold black radio">
-        <input value="yes" id="yes" name="feedback" type="radio" />
-        <label for="yes" class="ml-2 lh-2 semi-bold pointer">Yes</label>
-      </div>
-    </div>
-    <!-- Fieldset item-->
-    <div class="block mv-2">
-      <!-- Radio -->
-      <div class="m-0 ml-1 ph-4 pv-3 bg-pale-grey relative z-index-100 inline-flex items-center bold black radio">
-        <input value="no" id="no" name="feedback" type="radio" />
-        <label for="no" class="ml-2 lh-2 semi-bold">No</label>
-      </div>
-    </div>
-  </fieldset>
-  <br />
-  <br />
-  <a href="'#'">Link</a> <br />
-  <br />
-  <!--Well  -->
-  <div class="ba b-width-1 b-radius-1 b-heritage-blue p-4 pb-5">
-    <h2 class="mt-0">Hello World!</h2>
-    <p>
-      Get six alpha pups in here for a focus group today shall be a cloudy day, thanks to blue sky
-      thinking, we can now deploy our new ui to the cloud yet strategic fit.
-    </p>
-    <button class="semi-bold bg-turqouise-primary b-turqouise-primary heritage-blue inline-block ph-4 pv-3 b-radius-1 ba b-width-1 lh-2 hover-bg-turquoise-dark pointer hover-b-turquoise-dark focus-b-heritage-yellow outline-none content-box">
-      Next
-    </button>
-  </div>
-
-  <br />
-  <br />
-
-  <fieldset class="mb-4 b-none">
-    <legend class="block bold lh-2 mb-2">
-      Enter your date of purchase
-      <span class="mid-grey block regular">For example: 30 4 2017</span>
-    </legend>
-
-
-    <div class="inline-block mb-2 mr-2">
-      <label class="block bold lh-2 mb-2" for="day">Day:</label>
-      <div class="">
-        <input id="day" type="text" pattern="[0-9]{2}" maxlength="2" minlength="1" class="inline-block semi-bold lh-2 ph-4 pv-3 ba b-radius-2 b-width-2 b-light-grey char-width-2 outline-none focus-b-heritage-yellow " />
+    <!--  -->
+    <h3>Full width</h3>
+    <div class="flex mb-4">
+      <div class="w-100 p-2">
+        <div class="bg-red-light w-100 mh-1 text-center bold p-5">Full width</div>
       </div>
     </div>
 
-    <div class="inline-block mb-2 mr-2">
-      <label class="block bold lh-2 mb-2" for="month">Month:</label>
-      <div class="">
-        <input id="month" type="text" pattern="[0-9]{2}" maxlength="2" minlength="1" class="inline-block semi-bold lh-2 ph-4 pv-3 ba b-radius-2 b-width-2 b-light-grey char-width-2 outline-none focus-b-heritage-yellow " />
+    <!--  -->
+    <h3>Half width</h3>
+    <div class="flex mb-4">
+      <div class="w-50 p-2">
+        <div class="bg-turqouise-light w-100 mh-1 text-center bold p-5">Half width</div>
+      </div>
+      <div class="w-50 p-2">
+        <div class="bg-turqouise-light w-100 mh-1 text-center bold p-5">Half width</div>
       </div>
     </div>
 
-    <div class="inline-block mb-2 mr-2">
-      <label class="block bold lh-2 mb-2" for="year">Year:</label>
-      <div class="">
-        <input id="year" type="text" pattern="[0-9]{4}" maxlength="4" minlength="1" class="inline-block semi-bold lh-2 ph-4 pv-3 ba b-radius-2 b-width-2 b-light-grey char-width-4 outline-none focus-b-heritage-yellow " />
+    <!--  -->
+    <h3>One third width</h3>
+    <div class="flex mb-4">
+      <div class="flex w-third p-2">
+        <div class="bg-blue-light w-100 mh-1 text-center bold p-5">One third width</div>
+      </div>
+      <div class="flex w-third p-2">
+        <div class="bg-blue-light w-100 mh-1 text-center bold p-5">One third width</div>
+      </div>
+      <div class="flex w-third p-2">
+        <div class="bg-blue-light w-100 mh-1 text-center bold p-5">One third width</div>
       </div>
     </div>
-  </fieldset>
 
-  <br>
-  <br>
-
-  <fieldset class="b-none p-0 m-0">
-    <div>
-      <div class="m-0 ml-1 ph-4 pv-3 bg-pale-grey relative z-index-100 inline-flex items-center bold black checkbox">
-        <input value="yes" id="yes-check" name="feedback" type="checkbox" />
-        <label for="yes-check" class="ml-2 lh-2 semi-bold pointer">Yes</label>
+    <!--  -->
+    <h3>One quarter width</h3>
+    <div class="flex mb-4">
+      <div class=" w-quarter p-2">
+        <div class="bg-heritage-yellow-40 w-100 mh-1 text-center bold p-5">One quarter width</div>
+      </div>
+      <div class=" w-quarter p-2">
+        <div class="bg-heritage-yellow-40 w-100 mh-1 text-center bold p-5">One quarter width</div>
+      </div>
+      <div class=" w-quarter p-2">
+        <div class="bg-heritage-yellow-40 w-100 mh-1 text-center bold p-5">One quarter width</div>
+      </div>
+      <div class=" w-quarter p-2">
+        <div class="bg-heritage-yellow-40 w-100 mh-1 text-center bold p-5">One quarter width</div>
       </div>
     </div>
-  </fieldset>
-</body>
 
+    <!--  -->
+    <h2>Float based grid</h2>
+
+    <!--  -->
+    <h3>Full width</h3>
+    <div class="clear-fix mb-4">
+      <div class="float-left w-100 p-2">
+        <div class="bg-red-light w-100 mh-1 text-center bold p-5">Full width</div>
+      </div>
+    </div>
+
+    <!--  -->
+    <h3>Half width</h3>
+    <div class="clear-fix mb-4">
+      <div class="float-left w-50 p-2">
+        <div class="bg-turqouise-light w-100 mh-1 text-center bold p-5">Half width</div>
+      </div>
+      <div class="float-left w-50 p-2">
+        <div class="bg-turqouise-light w-100 mh-1 text-center bold p-5">Half width</div>
+      </div>
+    </div>
+    <!--  -->
+    <h3>One third width</h3>
+    <div class="clear-fix mb-4">
+      <div class="float-left w-third p-2">
+        <div class="bg-blue-light w-100 mh-1 text-center bold p-5">One third width</div>
+      </div>
+      <div class="float-left w-third p-2">
+        <div class="bg-blue-light w-100 mh-1 text-center bold p-5">One third width</div>
+      </div>
+      <div class="float-left w-third p-2">
+        <div class="bg-blue-light w-100 mh-1 text-center bold p-5">One third width</div>
+      </div>
+    </div>
+    <!--  -->
+    <h3>One quarter width</h3>
+    <div class="clear-fix mb-4">
+      <div class="float-left w-quarter p-2">
+        <div class="bg-heritage-yellow-40 w-100 mh-1 text-center bold p-5">One quarter width</div>
+      </div>
+      <div class="float-left w-quarter p-2">
+        <div class="bg-heritage-yellow-40 w-100 mh-1 text-center bold p-5">One quarter width</div>
+      </div>
+      <div class="float-left w-quarter p-2">
+        <div class="bg-heritage-yellow-40 w-100 mh-1 text-center bold p-5">One quarter width</div>
+      </div>
+      <div class="float-left w-quarter p-2">
+        <div class="bg-heritage-yellow-40 w-100 mh-1 text-center bold p-5">One quarter width</div>
+      </div>
+    </div>
+  </body>
 </html>
