@@ -3,89 +3,89 @@
 // ========================================================
 //
 
-.line-height-1 {
+.lh-1 {
   line-height: $line-height-1 !important;
 }
 
-.line-height-2 {
+.lh-2 {
   line-height: $line-height-2 !important;
 }
 
-.line-height-3 {
+.lh-3 {
   line-height: $line-height-3 !important;
 }
 
-.line-height-4 {
+.lh-4 {
   line-height: $line-height-4 !important;
 }
 
-.line-height-5 {
+.lh-5 {
   line-height: $line-height-5 !important;
 }
 
 
 @media #{$breakpoint-not-small} {
-  .line-height-1-ns {
+  .lh-1-ns {
     line-height: $line-height-1 !important;
   }
 
-  .line-height-2-ns {
+  .lh-2-ns {
     line-height: $line-height-2 !important;
   }
 
-  .line-height-3-ns {
+  .lh-3-ns {
     line-height: $line-height-3 !important;
   }
 
-  .line-height-4-ns {
+  .lh-4-ns {
     line-height: $line-height-4 !important;
   }
 
-  .line-height-5-ns {
+  .lh-5-ns {
     line-height: $line-height-5 !important;
   }
 }
 
 @media #{$breakpoint-medium} {
-  .line-height-1-m {
+  .lh-1-m {
     line-height: $line-height-1 !important;
   }
 
-  .line-height-2-m {
+  .lh-2-m {
     line-height: $line-height-2 !important;
   }
 
-  .line-height-3-m {
+  .lh-3-m {
     line-height: $line-height-3 !important;
   }
 
-  .line-height-4-m {
+  .lh-4-m {
     line-height: $line-height-4 !important;
   }
 
-  .line-height-5-m {
+  .lh-5-m {
     line-height: $line-height-5 !important;
   }
 }
 
 @media #{$breakpoint-large} {
-  .line-height-1-l {
+  .lh-1-l {
     line-height: $line-height-1 !important;
   }
 
-  .line-height-2-l {
+  .lh-2-l {
     line-height: $line-height-2 !important;
   }
 
-  .line-height-3-l {
+  .lh-3-l {
     line-height: $line-height-3 !important;
   }
 
-  .line-height-4-l {
+  .lh-4-l {
     line-height: $line-height-4 !important;
   }
 
-  .line-height-5-l {
+  .lh-5-l {
     line-height: $line-height-5 !important;
   }
 }
