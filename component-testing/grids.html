@@ -14,8 +14,6 @@
   <body class="black p-5">
     <h1>Grids</h1>
 
-    <h2>Flex based grid</h2>
-
     <!--  -->
     <h3>Full width</h3>
     <div class="flex mb-4">
@@ -25,10 +23,40 @@
     </div>
 
     <!--  -->
-    <h3>
-      Experiment with gutter class<br />One third width on desktop/full width on
-      mobile
-    </h3>
+    <h3>Half width on desktop/full width on mobile</h3>
+    <p>Stretching column to fit in row.</p>
+    <div class="flex flex-wrap mb-4 gutter-ns">
+      <div class="flex w-full w-half-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-turqouise-light w-full bold p-5 ">Half width</div>
+      </div>
+      <div class="w-full w-half-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-turqouise-light w-full bold p-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          mollis velit non gravida venenatis. Praesent consequat lectus purus,
+          ut scelerisque velit condimentum eu. Maecenas sagittis ante ut turpis
+          varius interdum. Quisque tellus ipsum, eleifend non ipsum id, suscipit
+          ultricies neque.
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <h3>Half width on desktop/full width on mobile</h3>
+    <div class="flex flex-wrap mb-4 gutter-ns">
+      <div class="w-full w-half-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-turqouise-light w-full text-center bold p-5">
+          Half width
+        </div>
+      </div>
+      <div class="w-full w-half-ns ph-2-ns mb-4 mb-0-ns">
+        <div class="bg-turqouise-light w-full text-center bold p-5">
+          Half width
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <h3>One third width on desktop/full width on mobile</h3>
     <div class="flex flex-wrap mb-4 gutter-ns">
       <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
         <div class="bg-blue-light w-full text-center bold p-5">
@@ -48,67 +76,14 @@
     </div>
 
     <!--  -->
-    <h3>Half width on desktop/full width on mobile</h3>
-    <p>Stretching column to fit in row.</p>
-    <div class="flex flex-wrap mb-4">
-      <div class="w-full w-half-ns mb-4 mb-0-ns flex">
-        <div class="bg-turqouise-light w-full bold p-5 ">Half width</div>
-      </div>
-      <div class="w-full w-half-ns pl-4-ns mb-4 mb-0-ns">
-        <div class="bg-turqouise-light w-full bold p-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          mollis velit non gravida venenatis. Praesent consequat lectus purus,
-          ut scelerisque velit condimentum eu. Maecenas sagittis ante ut turpis
-          varius interdum. Quisque tellus ipsum, eleifend non ipsum id, suscipit
-          ultricies neque.
-        </div>
-      </div>
-    </div>
-
-    <!--  -->
-    <h3>Half width on desktop/full width on mobile</h3>
-    <div class="flex flex-wrap mb-4">
-      <div class="w-full w-half-ns mb-4 mb-0-ns">
-        <div class="bg-turqouise-light w-full text-center bold p-5">
-          Half width
-        </div>
-      </div>
-      <div class="w-full w-half-ns pl-4-ns mb-4 mb-0-ns">
-        <div class="bg-turqouise-light w-full text-center bold p-5">
-          Half width
-        </div>
-      </div>
-    </div>
-
-    <!--  -->
-    <h3>One third width on desktop/full width on mobile</h3>
-    <div class="flex flex-wrap mb-4">
-      <div class="flex w-full w-third-ns mb-4 mb-0-ns">
-        <div class="bg-blue-light w-full text-center bold p-5">
-          One third width
-        </div>
-      </div>
-      <div class="flex w-full w-third-ns pl-4-ns mb-4 mb-0-ns">
-        <div class="bg-blue-light w-full text-center bold p-5">
-          One third width
-        </div>
-      </div>
-      <div class="flex w-full w-third-ns pl-4-ns mb-4 mb-0-ns">
-        <div class="bg-blue-light w-full text-center bold p-5">
-          One third width
-        </div>
-      </div>
-    </div>
-
-    <!--  -->
     <h3>Two third/One third width on desktop/full width on mobile</h3>
-    <div class="flex flex-wrap mb-4">
-      <div class="flex w-full w-two-thirds-ns mb-4 mb-0-ns">
+    <div class="flex flex-wrap mb-4 gutter-ns">
+      <div class="flex w-full w-two-thirds-ns ph-2-ns mb-4 mb-0-ns">
         <div class="bg-blue-light w-full text-center bold p-5">
           Two third width
         </div>
       </div>
-      <div class="flex w-full w-third-ns pl-4-ns mb-4 mb-0-ns">
+      <div class="flex w-full w-third-ns ph-2-ns mb-4 mb-0-ns">
         <div class="bg-blue-light w-full text-center bold p-5">
           One third width
         </div>
@@ -117,23 +92,23 @@
 
     <!--  -->
     <h3>One quarter width desktop/full width mobile</h3>
-    <div class="flex flex-wrap mb-4">
-      <div class="w-full w-quarter-ns mb-4 mb-0-ns">
+    <div class="flex flex-wrap mb-4 gutter-ns">
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
         <div class="bg-heritage-yellow-40 w-full text-center bold p-5">
           One quarter width
         </div>
       </div>
-      <div class="w-full w-quarter-ns pl-4-ns mb-4 mb-0-ns">
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
         <div class="bg-heritage-yellow-40 w-full text-center bold p-5">
           One quarter width
         </div>
       </div>
-      <div class="w-full w-quarter-ns pl-4-ns mb-4 mb-0-ns">
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
         <div class="bg-heritage-yellow-40 w-full text-center bold p-5">
           One quarter width
         </div>
       </div>
-      <div class="w-full w-quarter-ns pl-4-ns mb-4 mb-0-ns">
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
         <div class="bg-heritage-yellow-40 w-full text-center bold p-5">
           One quarter width
         </div>
@@ -142,38 +117,38 @@
 
     <!--  -->
     <h3>One quarter width desktop/half width mobile</h3>
-    <div class="flex flex-wrap mb-4">
-      <div class="w-half w-quarter-ns mb-4 mb-0-ns">
+    <div class="flex flex-wrap mb-4 gutter">
+      <div class="w-half w-quarter-ns ph-2 mb-4 mb-0-ns">
         <div class="bg-heritage-yellow-40 w-full text-center bold p-5">
           One quarter width
         </div>
       </div>
-      <div class="w-half w-quarter-ns pl-4 mb-4 mb-0-ns">
+      <div class="w-half w-quarter-ns ph-2 mb-4 mb-0-ns">
         <div class="bg-heritage-yellow-40 w-full text-center bold p-5">
           One quarter width
         </div>
       </div>
-      <div class="w-half w-quarter-ns pl-4-ns mb-4 mb-0-ns">
+      <div class="w-half w-quarter-ns ph-2 mb-4 mb-0-ns">
         <div class="bg-heritage-yellow-40 w-full text-center bold p-5">
           One quarter width
         </div>
       </div>
-      <div class="w-half w-quarter-ns pl-4 mb-4 mb-0-ns">
-        <div class="bg-heritage-yellow-40 w-full mh-1 text-center bold p-5">
+      <div class="w-half w-quarter-ns ph-2 mb-4 mb-0-ns">
+        <div class="bg-heritage-yellow-40 w-full text-center bold p-5">
           One quarter width
         </div>
       </div>
     </div>
 
     <!--  -->
-    <h3>Three quarter/one quarter width desktop/half width mobile</h3>
-    <div class="flex flex-wrap mb-4 ">
-      <div class="w-half w-three-quarters-ns mb-4 mb-0-ns">
+    <h3>Three quarter/one quarter width desktop/full width mobile</h3>
+    <div class="flex flex-wrap mb-4 gutter-ns">
+      <div class="w-full w-three-quarters-ns ph-2-ns mb-4 mb-0-ns">
         <div class="bg-heritage-yellow-40 w-full text-center bold p-5">
           Three quarter width
         </div>
       </div>
-      <div class="w-half w-quarter-ns pl-4 mb-4 mb-0-ns">
+      <div class="w-full w-quarter-ns ph-2-ns mb-4 mb-0-ns">
         <div class="bg-heritage-yellow-40 w-full text-center bold p-5">
           One quarter width
         </div>
