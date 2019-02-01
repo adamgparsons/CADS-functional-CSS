@@ -120,3 +120,15 @@
     width: 100% !important;
   }
 }
+
+.gutter {
+  margin-left: -$spacing-2;
+  margin-right: -$spacing-2;
+}
+
+@media #{$breakpoint-not-small} {
+.gutter-ns {
+  margin-left: -$spacing-2;
+  margin-right: -$spacing-2;
+}
+}
