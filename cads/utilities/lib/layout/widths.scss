@@ -20,104 +20,103 @@
 }
 
 .w-quarter {
-  width: 25%;
-}
-
-.w-third {
-  width: 33%;
-}
-
-.w-half,
-  {
-  width: 50%;
-}
-
-.w-two-thirds {
-  width: 60%;
+  width: 25% !important;
 }
 
 .w-three-quarters {
-  width: 75%;
+  width: 75% !important;
+}
+
+.w-third {
+  width: calc(100%/3) !important;
+}
+
+.w-two-thirds {
+  width: calc(100%/3*2) !important;
+}
+
+.w-half {
+  width: 50% !important;
 }
 
 .w-full {
-  width: 100%;
+  width: 100% !important;
 }
 
 @media #{$breakpoint-not-small} {
   .w-quarter-ns {
-    width: 25%;
-  }
-  
-  .w-third-ns {
-    width: 33%;
-  }
-  
-  .w-half-ns {
-    width: 50%;
-  }
-  
-  .w-two-thirds-ns {
-    width: 60%;
+    width: 25% !important;
   }
   
   .w-three-quarters-ns {
-    width: 75%;
+    width: 75% !important;
+  }
+  
+  .w-third-ns {
+    width: calc(100%/3) !important;
+  }
+  
+  .w-two-thirds-ns {
+    width: calc(100%/3*2) !important;
+  }
+  
+  .w-half-ns {
+    width: 50% !important;
   }
   
   .w-full-ns {
-    width: 100%;
-  } 
+    width: 100% !important;
+  }
 }
 
 @media #{$breakpoint-medium} {
   .w-quarter-m {
-    width: 25%;
-  }
-  
-  .w-third-m {
-    width: 33%;
-  }
-  
-  .w-half-m {
-    width: 50%;
-  }
-  
-  .w-two-thirds-m {
-    width: 60%;
+    width: 25% !important;
   }
   
   .w-three-quarters-m {
-    width: 75%;
+    width: 75% !important;
+  }
+  
+  .w-third-m {
+    width: calc(100%/3) !important;
+  }
+  
+  .w-two-thirds-m {
+    width: calc(100%/3*2) !important;
+  }
+  
+  .w-half-m {
+    width: 50% !important;
   }
   
   .w-full-m {
-    width: 100%;
-  } 
+    width: 100% !important;
+  }
 }
 
 @media #{$breakpoint-large} {
   .w-quarter-l {
-    width: 25%;
-  }
-  
-  .w-third-l {
-    width: 33%;
-  }
-  
-  .w-half-l {
-    width: 50%;
-  }
-  
-  .w-two-thirds-l {
-    width: 60%;
+    width: 25% !important;
   }
   
   .w-three-quarters-l {
-    width: 75%;
+    width: 75% !important;
+  }
+  
+  .w-third-l {
+    width: calc(100%/3) !important;
+  }
+  
+  .w-two-thirds-l {
+    width: calc(100%/3*2) !important;
+  }
+  
+  .w-half-l {
+    width: 50% !important;
   }
   
   .w-full-l {
-    width: 100%;
-  } 
+    width: 100% !important;
+  }
 }
