@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:css": "node-sass -w --output-style expanded ./component-testing/styles.scss ./component-testing/output.css",
+    "compile:css": "sass component-testing/styles.scss:component-testing/output.css",
     "watch:css": "nodemon --watch ./styles --ext scss --exec \"npm run compile:css\"",
     "start": "browser-sync start --server 'component-testing' --files 'component-testing'"
   },
